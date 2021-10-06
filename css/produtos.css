@@ -1,0 +1,130 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+header{
+  background:#bbbbbb;
+  padding: 20px 0;
+}
+
+.caixa{
+  position:relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav{
+  position:absolute;
+  top: 110px;
+  right: 0px;
+}
+
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav li a{
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 400ms;
+}
+
+nav a:hover{
+  color:rgb(28, 86, 153);
+  transition: 400ms;
+  text-decoration: none;
+}
+
+.produtos{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produtos li{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 12px;
+}
+
+.produtos li:hover{
+  border-color: rgb(28, 86, 153);
+  background: #bbbbbb;
+  font-weight: bold;
+}
+
+.produtos li:active{
+  border-color: red;
+}
+
+.produtos img:hover{
+ transition: .2s;
+}
+
+.produtos img:hover{
+  transform: scale(1.1) translateY(-5px);
+}
+
+.produto-descricao{
+  font-size: 18px;  
+}
+
+.produto-preco{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: #bbbbbb;
+  padding: 40px 0;
+}
+
+.copy {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px){
+  .caixa{
+    width: auto;
+  }
+
+  .principal .footer{
+    width: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    position: static;
+    text-align: center;
+  } 
+}
+
+@media screen and (max-width: 768px){  
+  .produtos{
+    width: 100%;
+    text-align:center;
+ }
+
+  .produtos li{
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;   
+  } 
+}
